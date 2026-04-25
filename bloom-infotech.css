@@ -1068,10 +1068,11 @@ footer {
 
 /* ====== RESPONSIVE ====== */
 @media (max-width: 960px) {
-  .about { grid-template-columns: 1fr; gap: 40px; }
-  .about-visual { max-width: 340px; }
+  section { padding: 80px 6%; }
+  .about { grid-template-columns: 1fr; gap: 48px; }
+  .about-visual { max-width: 400px; margin: 0 auto; }
   .footer-top { grid-template-columns: 1fr 1fr; }
-  .stats-strip { grid-template-columns: repeat(2,1fr); }
+  .stats-strip { grid-template-columns: repeat(2, 1fr); }
   .stat-item:nth-child(2) { border-right: none; }
   .hero-right { display: none; }
   .nav-links { display: none; }
@@ -1079,12 +1080,33 @@ footer {
   .stores-grid { grid-template-columns: 1fr; }
   .store-card { flex-direction: column; }
 }
+
+@media (max-width: 768px) {
+  .hero { height: auto; min-height: 100vh; padding: 100px 5% 60px; }
+  .slide { padding: 0 5%; flex-direction: column; justify-content: center; text-align: center; }
+  .slide-content { max-width: 100%; }
+  .slide-sub { margin: 0 auto 32px; }
+  .slide-btns { justify-content: center; }
+  .slide-title { font-size: 38px; line-height: 1.1; }
+  
+  .stats-strip { grid-template-columns: 1fr; padding: 30px 5%; }
+  .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 24px; }
+  .stat-item:last-child { border-bottom: none; }
+  
+  .products-header { flex-direction: column; align-items: flex-start; }
+  .filter-tabs { width: 100%; overflow-x: auto; padding-bottom: 8px; }
+}
+
 @media (max-width: 600px) {
   section { padding: 60px 5%; }
-  .footer-top { grid-template-columns: 1fr; gap: 36px; padding: 52px 5% 40px; }
+  .section-title { font-size: 28px; }
+  .footer-top { grid-template-columns: 1fr; gap: 40px; padding: 50px 5%; }
   .footer-map { padding: 0 5%; }
-  .footer-bottom { padding: 20px 5%; }
-  .promo-inner { padding: 36px 28px; }
-  .exp-badge { left: 8px; bottom: 12px; }
-  .stats-strip { padding: 40px 5%; }
+  .footer-bottom { padding: 20px 5%; flex-direction: column; text-align: center; }
+  .promo-inner { padding: 40px 24px; text-align: center; }
+  .promo-text p { margin: 0 auto; }
+  .exp-badge { position: relative; left: 0; bottom: 0; margin-top: -20px; margin-bottom: 20px; display: inline-block; }
+  .store-img { height: 260px; }
+  .store-info { padding: 24px; }
+  .store-info h3 { font-size: 19px; }
 }

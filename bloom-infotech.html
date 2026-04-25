@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom Infotech — Bhagalpur's #1 Computer Store</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="bloom-infotech.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a href="#" class="logo-wrap">
+      <img src="logoBI.png" alt="Bloom Infotech Logo" class="logo-img">
+      <div class="logo-text">
+        <span>Bloom Infotech</span>
+        <span>Bhagalpur, Bihar</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" id="hamBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="closeMobile()">Home</a>
+    <a href="#services" onclick="closeMobile()">Services</a>
+    <a href="#products" onclick="closeMobile()">Products</a>
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>🔥 Mega Sale — Flat 30% Off on All Laptops</span>
+      <span class="dot">◆</span>
+      <span>Free PC Assembly with Every Build Order</span>
+      <span class="dot">◆</span>
+      <span>Latest Intel & AMD Processors Now In Stock</span>
+      <span class="dot">◆</span>
+      <span>Gaming PC Builds Starting ₹35,000</span>
+      <span class="dot">◆</span>
+      <span>EMI Available — 0% Interest on Select Products</span>
+      <span class="dot">◆</span>
+      <span>Genuine Accessories | 1-Year Warranty on All Products</span>
+      <span class="dot">◆</span>
+      <span>🔥 Mega Sale — Flat 30% Off on All Laptops</span>
+      <span class="dot">◆</span>
+      <span>Free PC Assembly with Every Build Order</span>
+      <span class="dot">◆</span>
+      <span>Latest Intel & AMD Processors Now In Stock</span>
+      <span class="dot">◆</span>
+      <span>Gaming PC Builds Starting ₹35,000</span>
+      <span class="dot">◆</span>
+      <span>EMI Available — 0% Interest on Select Products</span>
+      <span class="dot">◆</span>
+      <span>Genuine Accessories | 1-Year Warranty on All Products</span>
+      <span class="dot">◆</span>
+    </div>
+  </div>
+
+  <!-- HERO SLIDER -->
+  <section class="hero" id="home">
+    <!-- Slide 1 -->
+    <div class="slide active" id="slide0">
+      <div class="slide-bg" style="background-image: url('bi1.jpg');"></div>
+      <div class="slide-bg-color"
+        style="background: linear-gradient(135deg, rgba(10, 10, 10, 0.5) 0%, rgba(26, 26, 46, 0.5) 100%);"></div>
+      <div class="slide-content">
+        <div class="slide-tag">Bhagalpur's #1 Computer Store</div>
+        <h1 class="slide-title">Power Up<br>Your World</h1>
+        <p class="slide-sub">From laptops to full custom PC builds — everything tech under one roof. Visit us in
+          Bhagalpur, Bihar.</p>
+        <div class="slide-btns">
+          <a href="#products" class="btn-primary">Shop Now</a>
+          <a href="#services" class="btn-outline">Our Services</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-badge">
+          <span class="num">30%</span>
+          <span class="lbl">Sale Live</span>
+        </div>
+        <div class="hero-badge">
+          <span class="num">500+</span>
+          <span class="lbl">Products</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" id="slide1">
+      <div class="slide-bg" style="background-image: url('bi2.jpg');"></div>
+      <div class="slide-bg-color"
+        style="background: linear-gradient(135deg, rgba(13, 17, 23, 0.5) 0%, rgba(22, 32, 50, 0.5) 100%);"></div>
+      <div class="slide-content">
+        <div class="slide-tag">Custom PC Builds</div>
+        <h1 class="slide-title">Build Your<br>Dream PC</h1>
+        <p class="slide-sub">Expert PC assembly with premium components. Gaming rigs, workstations, editing PCs — we
+          build it all.</p>
+        <div class="slide-btns">
+          <a href="#contact" class="btn-primary">Get a Quote</a>
+          <a href="#products" class="btn-outline">See Builds</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-badge">
+          <span class="num">₹35K</span>
+          <span class="lbl">Starting</span>
+        </div>
+        <div class="hero-badge">
+          <span class="num">Free</span>
+          <span class="lbl">Assembly</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" id="slide2">
+      <div class="slide-bg" style="background-image: url('bi3.jpg');"></div>
+      <div class="slide-bg-color"
+        style="background: linear-gradient(135deg, rgba(15, 12, 12, 0.5) 0%, rgba(42, 21, 16, 0.5) 100%);"></div>
+      <div class="slide-content">
+        <div class="slide-tag">Premium Laptops</div>
+        <h1 class="slide-title">Top Brands.<br>Best Prices.</h1>
+        <p class="slide-sub">ASUS, Lenovo, HP, Dell and more. Genuine products with warranty. EMI available at 0%
+          interest.</p>
+        <div class="slide-btns">
+          <a href="#products" class="btn-primary">View Laptops</a>
+          <a href="#contact" class="btn-outline">EMI Options</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-badge">
+          <span class="num">EMI</span>
+          <span class="lbl">0% Interest</span>
+        </div>
+        <div class="hero-badge">
+          <span class="num">1 Yr</span>
+          <span class="lbl">Warranty</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-dots" id="sliderDots">
+      <button class="dot-btn active" onclick="goSlide(0)"></button>
+      <button class="dot-btn" onclick="goSlide(1)"></button>
+      <button class="dot-btn" onclick="goSlide(2)"></button>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <div class="stats-strip">
+    <div class="stat-item">
+      <span class="stat-num">10+</span>
+      <span class="stat-label">Years Experience</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">5000+</span>
+      <span class="stat-label">Happy Customers</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">500+</span>
+      <span class="stat-label">Products Available</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">100%</span>
+      <span class="stat-label">Genuine Products</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <span class="section-label">What We Offer</span>
+    <h2 class="section-title">Everything Tech,<br>One Address</h2>
+    <p class="section-sub">Complete computer solutions for home users, students, gamers, and businesses in Bhagalpur.
+    </p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <div class="service-name">Laptops & Desktops</div>
+        <div class="service-desc">Top brands like ASUS, Lenovo, HP, Dell — for work, study, and gaming.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🖥️</div>
+        <div class="service-name">Custom PC Builds</div>
+        <div class="service-desc">Tailor-made gaming & workstation builds assembled by our expert technicians.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <div class="service-name">PC Repair & Service</div>
+        <div class="service-desc">Fast and affordable repairs — hardware issues, software, virus removal, upgrades.
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🖱️</div>
+        <div class="service-name">Accessories</div>
+        <div class="service-desc">Keyboards, mice, headsets, webcams, cables, SSDs, RAM, and much more.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🖨️</div>
+        <div class="service-name">Printers & Scanners</div>
+        <div class="service-desc">Home and office printers, toner cartridges, and scanning solutions.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <div class="service-name">Networking</div>
+        <div class="service-desc">Routers, switches, Wi-Fi range extenders, and complete LAN setup services.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="products-header">
+      <div>
+        <span class="section-label">Our Products</span>
+        <h2 class="section-title">Featured Picks</h2>
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-tab active" onclick="filterProducts('all', this)">All</button>
+        <button class="filter-tab" onclick="filterProducts('laptop', this)">Laptops</button>
+        <button class="filter-tab" onclick="filterProducts('parts', this)">PC Parts</button>
+        <button class="filter-tab" onclick="filterProducts('accessories', this)">Accessories</button>
+      </div>
+    </div>
+    <div class="products-grid" id="productsGrid">
+      <!-- Products injected by JS -->
+    </div>
+  </section>
+
+  <!-- PROMO BANNER -->
+  <div class="promo-banner">
+    <div class="promo-inner">
+      <div class="promo-text">
+        <span class="tag">Limited Time Offer</span>
+        <h2>Mega Sale — Upto 30% Off<br>on Top Laptops</h2>
+        <p>Don't miss out on Bhagalpur's biggest computer sale. Valid this month only. Visit our store or call now!</p>
+      </div>
+      <div class="promo-cta">
+        <a href="#contact">Visit Store Now →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BRANDS -->
+  <div class="brands">
+    <p class="brands-label">Brands We Carry</p>
+    <div class="brands-marquee-wrap">
+      <div class="brands-marquee-track">
+        <img src="l1.png" alt="ASUS" class="brand-logo">
+        <img src="l2.png" alt="Lenovo" class="brand-logo">
+        <img src="l3.png" alt="HP" class="brand-logo">
+        <img src="l4.png" alt="Dell" class="brand-logo">
+        <img src="l5.png" alt="MSI" class="brand-logo">
+        <img src="l6.svg" alt="AMD" class="brand-logo">
+        <img src="l7.png" alt="Intel" class="brand-logo">
+        <img src="l8.png" alt="Samsung" class="brand-logo">
+        <img src="l9.png" alt="Apple" class="brand-logo">
+        <img src="l10.png" alt="Logitech" class="brand-logo">
+        <!-- Duplicate for loop -->
+        <img src="l1.png" alt="ASUS" class="brand-logo">
+        <img src="l2.png" alt="Lenovo" class="brand-logo">
+        <img src="l3.png" alt="HP" class="brand-logo">
+        <img src="l4.png" alt="Dell" class="brand-logo">
+        <img src="l5.png" alt="MSI" class="brand-logo">
+        <img src="l6.svg" alt="AMD" class="brand-logo">
+        <img src="l7.png" alt="Intel" class="brand-logo">
+        <img src="l8.png" alt="Samsung" class="brand-logo">
+        <img src="l9.png" alt="Apple" class="brand-logo">
+        <img src="l10.png" alt="Logitech" class="brand-logo">
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT OWNER -->
+  <section id="about">
+    <div class="about">
+      <div class="about-visual">
+        <div class="owner-photo-wrap">
+          <img src="owner.png" alt="Owner Photo" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="about-accent"></div>
+        <div class="exp-badge">
+          <span class="years">10+</span>
+          <span class="ytxt">Years of Trust</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-label">About the Owner</span>
+        <h2 class="section-title">A Passion for<br>Technology</h2>
+        <blockquote class="about-quote">
+          "Mere liye yeh sirf ek dukaan nahi hai — yeh ek sapna hai jo maine Bhagalpur ke logon ke liye jeeyaa hai."
+        </blockquote>
+        <p class="about-text">
+          Bloom Infotech ki shuruaat ek chhoti si computer shop se hui thi. Aaj, 10+ saalon ki mehnat aur dedication ke
+          baad, hum Bhagalpur ka sabse trusted computer store ban gaye hain.
+        </p>
+        <p class="about-text">
+          Hamare yahan genuine products, expert advice, aur honest service milti hai. Chahe aapko budget laptop chahiye
+          ya high-end gaming rig — hum aapka poora khayal rakhte hain.
+        </p>
+        <div class="about-chips">
+          <span class="about-chip">✓ Genuine Products Only</span>
+          <span class="about-chip">✓ Expert PC Builder</span>
+          <span class="about-chip">✓ After-Sale Support</span>
+          <span class="about-chip">✓ EMI Available</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <span class="section-label">Customer Reviews</span>
+    <h2 class="section-title">What People Say</h2>
+    <div class="testimonials-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Bloom Infotech se mera gaming PC banwaya — ASUS motherboard, Ryzen 5 processor, 16GB RAM.
+          Build quality ekdum top hai, price bhi reasonable thi. Highly recommend!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RK</div>
+          <div>
+            <span class="testi-name">Rahul Kumar</span>
+            <span class="testi-loc">Bhagalpur, Bihar</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Lenovo laptop liya yahan se, proper warranty ke saath. Owner bahut helpful hain, sab kuch
+          clearly samjhaya. Shop mein genuine products milte hain — koi duplicate nahin."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">PS</div>
+          <div>
+            <span class="testi-name">Priya Singh</span>
+            <span class="testi-loc">Bhagalpur, Bihar</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Mera laptop crash ho gaya tha — inka repair bhi ekdum fast aur affordable tha. 2 din mein
+          theek kar ke de diya. Bahut trustworthy shop hai Bhagalpur mein."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AM</div>
+          <div>
+            <span class="testi-name">Amit Mahto</span>
+            <span class="testi-loc">Bhagalpur, Bihar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR STORES -->
+  <section class="stores" id="stores">
+    <span class="section-label">Visit Us</span>
+    <h2 class="section-title">Our Stores</h2>
+    <div class="stores-grid">
+      <div class="store-card">
+        <div class="store-img">
+          <img src="store1.jpg" alt="Main Store">
+        </div>
+        <div class="store-info">
+          <h3>Bloom Infotech - Asus Exclusive Store</h3>
+          <p>Dr RP Rd, Opposite Manpasand, Khalifabag, Bhagalpur, Bihar 812001</p>
+          <a href="https://maps.app.goo.gl/rRCbceYTZjyk3nwj6" target="_blank" class="btn-outline"
+            style="color:var(--black); border-color:var(--border);">Get Directions →</a>
+        </div>
+      </div>
+      <div class="store-card">
+        <div class="store-img">
+          <img src="store2.jpg" alt="Second Store">
+        </div>
+        <div class="store-info">
+          <h3>Bloom Infotech - Lenovo Exclusive Store</h3>
+          <p>Dr. Rajendar, Mahadev Tower, Janki Prasad Ln, Bhagalpur, Bihar 812002</p>
+          <a href="https://maps.app.goo.gl/aTMwqtbrgJibJwkv9" target="_blank" class="btn-outline"
+            style="color:var(--black); border-color:var(--border);">Get Directions →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="logoBI.png" alt="Bloom Infotech Logo" class="logo-img">
+          <div class="logo-text">
+            <span
+              style="font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:#fff;display:block;letter-spacing:-0.5px;">Bloom
+              Infotech</span>
+            <span
+              style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);display:block;margin-top:2px;">Bhagalpur,
+              Bihar</span>
+          </div>
+        </div>
+        <p class="footer-tagline">Bhagalpur ka sabse bharosemand computer store. Laptops, PC parts, accessories, custom
+          builds — sab kuch ek jagah.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" title="Facebook">f</a>
+          <a href="#" class="social-btn" title="Instagram">in</a>
+          <a href="#" class="social-btn" title="WhatsApp">W</a>
+          <a href="#" class="social-btn" title="YouTube">▶</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About Owner</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#">Laptops</a></li>
+          <li><a href="#">Desktop PCs</a></li>
+          <li><a href="#">Custom PC Builds</a></li>
+          <li><a href="#">PC Components</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Printers</a></li>
+          <li><a href="#">Networking</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <div class="contact-text">Bloom Infotech, [Your Shop Address],<br>Bhagalpur, Bihar — 812001</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14h0v2.92z" />
+            </svg>
+          </div>
+          <div class="contact-text"><a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </div>
+          <div class="contact-text"><a href="mailto:bloominfotech@gmail.com">bloominfotech@gmail.com</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <div class="contact-text">Mon – Sat: 10:00 AM – 8:00 PM<br>Sunday: 11:00 AM – 5:00 PM</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GOOGLE MAP
+    <div class="footer-map">
+      <p class="map-label">📍 Find Us on the Map</p>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116093.47706870407!2d86.91548!3d25.24458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0741ab0e53097%3A0x8fdb80a3fef6cc1a!2sBhagalpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Bloom Infotech Location — Bhagalpur, Bihar">
+        </iframe>
+      </div>
+    </div> -->
+
+    <div class="footer-bottom">
+      <p>© 2025 <span>Bloom Infotech</span>. All rights reserved. Bhagalpur, Bihar.</p>
+      <p>Designed by <a href="https://wa.me/919501303799/" style="color: var(--gold);">Arvind Kumar</a> </p>
+    </div>
+  </footer>
+
+  <script src="bloom-infotech.js"></script>
+</body>
+
+</html>

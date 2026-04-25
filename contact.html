@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Bloom Infotech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bloom-infotech.css">
+  <style>
+    body { background: var(--white); }
+    .contact-hero {
+      padding: 120px 8% 60px;
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+    }
+    .contact-container {
+      max-width: 1200px;
+      margin: -60px auto 100px;
+      padding: 0 8%;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 40px;
+    }
+    .contact-info-card {
+      background: var(--off-white);
+      padding: 40px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+    }
+    .contact-form-card {
+      background: var(--white);
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+      border: 1px solid var(--border);
+    }
+    .form-group { margin-bottom: 24px; }
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-family: var(--font-body);
+      font-size: 15px;
+      transition: border-color 0.3s;
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+    .info-item { margin-bottom: 30px; }
+    .info-item h4 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: var(--black);
+    }
+    .info-item p { color: var(--text-muted); line-height: 1.6; }
+    
+    @media (max-width: 960px) {
+      .contact-container { grid-template-columns: 1fr; margin-top: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR (Simplified) -->
+  <nav style="background: var(--black); border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <a href="bloom-infotech.html" class="logo-wrap">
+      <img src="logoBI.png" alt="Logo" class="logo-img">
+      <div class="logo-text">
+        <span style="color: var(--white);">Bloom Infotech</span>
+        <span style="color: rgba(255,255,255,0.5);">Bhagalpur, Bihar</span>
+      </div>
+    </a>
+    <a href="bloom-infotech.html" class="nav-cta" style="background: var(--gold); color: var(--black) !important;">Back to Home</a>
+  </nav>
+
+  <section class="contact-hero">
+    <span class="section-label">Get In Touch</span>
+    <h1 class="section-title" style="color: var(--white);">Contact Bloom Infotech</h1>
+    <p style="color: rgba(255,255,255,0.6); max-width: 600px; margin: 0 auto;">Have a question about a product or need a custom PC quote? We're here to help.</p>
+  </section>
+
+  <div class="contact-container">
+    <div class="contact-info-card">
+      <div class="info-item">
+        <h4>Visit Our Store</h4>
+        <p>Khalifabag & Adampur Branches,<br>Bhagalpur, Bihar</p>
+      </div>
+      <div class="info-item">
+        <h4>Call Us</h4>
+        <p>+91 95013 03799<br>Mon-Sat: 10AM - 8PM</p>
+      </div>
+      <div class="info-item">
+        <h4>Email Us</h4>
+        <p>bloominfotech@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="contact-form-card">
+      <form action="#">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" placeholder="Custom PC Build / Laptop Inquiry">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Tell us what you're looking for..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer style="background: var(--black); padding: 40px 8%; text-align: center; color: var(--white);">
+    <p>© 2025 Bloom Infotech. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
